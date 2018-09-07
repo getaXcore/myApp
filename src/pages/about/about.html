@@ -1,11 +1,50 @@
 <ion-header>
   <ion-navbar>
+    <!--<div>
+      <div style="float:left;margin-left: 5%;margin-right: 5%">
+        <ion-icon md="md-arrow-round-back" (click)="back()"></ion-icon>
+      </div>
+      <div style="float:left;">
+        <ion-title>
+          About
+        </ion-title>
+      </div>
+    </div>-->
     <ion-title>
       About
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content>
+  <button block="" ion-button="" class="disable-hover button button-md button-default button-default-md button-block button-block-md" (click)="back()">
+    <span class="button-inner">
+    Ke contact page
+    </span>
+    <div class="button-effect"></div>
+  </button>
+  <button block="" ion-button="" class="disable-hover button button-md button-default button-default-md button-block button-block-md" (click)="presentActionSheet()">
+    <span class="button-inner">
+    Tampil ActionSheet
+    </span>
+    <div class="button-effect"></div>
+  </button>
+  <button block="" ion-button="" class="disable-hover button button-md button-default button-default-md button-block button-block-md" (click)="showAlert()">
+    <span class="button-inner">
+    Tampil Alert
+    </span>
+    <div class="button-effect"></div>
+  </button>
+  <button block="" ion-button="" class="disable-hover button button-md button-default button-default-md button-block button-block-md" (click)="showPrompt()">
+    <span class="button-inner">
+    Tampil Prompt Alert
+    </span>
+    <div class="button-effect"></div>
+  </button>
+  <button block="" ion-button="" class="disable-hover button button-md button-default button-default-md button-block button-block-md" (click)="showConfirm()">
+    <span class="button-inner">
+    Tampil Confirm Alert
+    </span>
+    <div class="button-effect"></div>
+  </button>
 </ion-content>
