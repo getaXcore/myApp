@@ -6,9 +6,30 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  public event = {
+    month: '1990-02-19',
+    timeStart: '07:43',
+    timeEnds: '1990-02-02'
+  }
+  public press: number = 0;
+  public pan: number = 0;
+  public swipe: number = 0;
+  public tap: number = 0;
 
   constructor(public navCtrl: NavController) {
 
+  }
+  pressEvent(e){
+    this.press++
+  }
+  panEvent(e){
+    this.pan++;
+  }
+  swipeEvent(e){
+    this.swipe++
+  }
+  tapEvent(e){
+    this.tap++
   }
 
 }

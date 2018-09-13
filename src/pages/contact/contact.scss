@@ -1,3 +1,14 @@
 page-contact {
 
 }
+.map-card{
+  ion-card{
+    position: relative;
+  }
+  .map-pin{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+
+  }
+}
