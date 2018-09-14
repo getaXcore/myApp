@@ -139,4 +139,22 @@
       Swiped: {{swipe}} times
     </ion-item>
   </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 class="grid-col">This is column will take 12 columns</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 class="grid-col">This column will take 6 columns</ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 class="grid-col">
+        This column will be 12 columns wide by default,
+        9 columns at the small breakpoint,
+        6 at the medium breakpoint, 4 at large, and 3 at xl.
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-icon name="heart" color="danger"></ion-icon>                    <!-- active -->
+  <ion-icon name="heart" isActive="false" color="danger"></ion-icon>  <!-- inactive -->
+  <ion-icon [name]="myIcon" [color]="myColor"></ion-icon>
 </ion-content>

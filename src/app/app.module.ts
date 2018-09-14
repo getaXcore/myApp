@@ -10,6 +10,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {LoginPage} from "../pages/login/login";
 /*import {ListPage} from "../pages/list/list";
 import {ItemDetailPage} from "../pages/item-details/item-details";*/
 
@@ -19,9 +20,10 @@ import {ItemDetailPage} from "../pages/item-details/item-details";*/
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
     /*ListPage,
     ItemDetailPage*/
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -33,9 +35,10 @@ import {ItemDetailPage} from "../pages/item-details/item-details";*/
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
     /*ListPage,
     ItemDetailPage*/
+    LoginPage
   ],
   providers: [
     StatusBar,

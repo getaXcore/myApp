@@ -15,6 +15,8 @@ export class ContactPage {
   public pan: number = 0;
   public swipe: number = 0;
   public tap: number = 0;
+  myIcon: string = "home";
+  myColor: string = "primary";
 
   constructor(public navCtrl: NavController) {
 
