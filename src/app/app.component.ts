@@ -8,6 +8,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TabsPage } from '../pages/tabs/tabs';
 import {AboutPage} from "../pages/about/about";
 import {ContactPage} from "../pages/contact/contact";
+import {ListPage} from "../pages/list/list";
+import {ListDividersPage} from "../pages/list-dividers/list-dividers";
+import {AvatarListPage} from "../pages/avatar-list/avatar-list";
+import {SlidingListPage} from "../pages/sliding-list/sliding-list";
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +28,7 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
-    this.pages = [{title:'About',component:AboutPage},{title:'Contact',component:ContactPage}];
+    this.pages = [{title:'About',component:AboutPage},{title:'Contact',component:ContactPage},{title:'List',component:ListPage},{title:'List Dividers',component:ListDividersPage},{title:'Avatar List',component:AvatarListPage},{title:'Sliding List',component:SlidingListPage}];
   }
 
 

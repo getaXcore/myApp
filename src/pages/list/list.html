@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Lists
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list-header>
+        Action
+    </ion-list-header>
+    <ion-list inset>
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item.title)" icon-start=""><ion-icon name="{{item.icon}}"></ion-icon>{{item.title}}</button>
+    </ion-list>
+</ion-content>
