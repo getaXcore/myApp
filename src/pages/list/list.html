@@ -8,9 +8,9 @@
 
 <ion-content>
     <ion-list-header>
-        Action
+        Hobbits
     </ion-list-header>
     <ion-list inset>
-        <button ion-item *ngFor="let item of items" (click)="itemSelected(item.title)" icon-start=""><ion-icon name="{{item.icon}}"></ion-icon>{{item.title}}</button>
+        <button ion-item *ngFor="let item of items" (click)="openModal({charNum:item.charNum})">{{item.name}}</button>
     </ion-list>
 </ion-content>

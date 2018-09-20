@@ -11,10 +11,11 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {LoginPage} from "../pages/login/login";
-import {ListPage} from "../pages/list/list";
+import {ListPage, ModalContentPage} from "../pages/list/list";
 import {ListDividersPage} from "../pages/list-dividers/list-dividers";
 import {AvatarListPage} from "../pages/avatar-list/avatar-list";
 import {SlidingListPage} from "../pages/sliding-list/sliding-list";
+import {ThumbnailsPage} from "../pages/thumbnails/thumbnails";
 /*import {ListPage} from "../pages/list/list";
 import {ItemDetailPage} from "../pages/item-details/item-details";*/
 
@@ -30,7 +31,9 @@ import {ItemDetailPage} from "../pages/item-details/item-details";*/
     LoginPage,
     ListDividersPage,
     AvatarListPage,
-    SlidingListPage
+    SlidingListPage,
+    ThumbnailsPage,
+    ModalContentPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,9 @@ import {ItemDetailPage} from "../pages/item-details/item-details";*/
     LoginPage,
     ListDividersPage,
     AvatarListPage,
-    SlidingListPage
+    SlidingListPage,
+    ThumbnailsPage,
+    ModalContentPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {ViewChild} from "@angular/core";
-import {Platform} from 'ionic-angular';
+import {MenuController, Platform} from 'ionic-angular';
 import {Nav} from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -12,6 +12,7 @@ import {ListPage} from "../pages/list/list";
 import {ListDividersPage} from "../pages/list-dividers/list-dividers";
 import {AvatarListPage} from "../pages/avatar-list/avatar-list";
 import {SlidingListPage} from "../pages/sliding-list/sliding-list";
+import {ThumbnailsPage} from "../pages/thumbnails/thumbnails";
 
 @Component({
   templateUrl: 'app.html'
@@ -21,14 +22,22 @@ export class MyApp {
   rootPage:any = TabsPage;
   pages:Array<{title:String,component:any}>;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public menuCtrl: MenuController) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
     });
-    this.pages = [{title:'About',component:AboutPage},{title:'Contact',component:ContactPage},{title:'List',component:ListPage},{title:'List Dividers',component:ListDividersPage},{title:'Avatar List',component:AvatarListPage},{title:'Sliding List',component:SlidingListPage}];
+    this.pages = [
+        {title:'About',component:AboutPage},
+        {title:'Contact',component:ContactPage},
+        {title:'List',component:ListPage},
+        {title:'List Dividers',component:ListDividersPage},
+        {title:'Avatar List',component:AvatarListPage},
+        {title:'Sliding List',component:SlidingListPage},
+        {title:'Thumbnail List',component:ThumbnailsPage}
+    ];
   }
 
 
