@@ -16,6 +16,9 @@ import {ListDividersPage} from "../pages/list-dividers/list-dividers";
 import {AvatarListPage} from "../pages/avatar-list/avatar-list";
 import {SlidingListPage} from "../pages/sliding-list/sliding-list";
 import {ThumbnailsPage} from "../pages/thumbnails/thumbnails";
+import {PopoverPage, Popovers} from "../pages/popover/popover";
+import {RangesPage} from "../pages/ranges/ranges";
+import {SearchPage} from "../pages/search/search";
 /*import {ListPage} from "../pages/list/list";
 import {ItemDetailPage} from "../pages/item-details/item-details";*/
 
@@ -33,7 +36,11 @@ import {ItemDetailPage} from "../pages/item-details/item-details";*/
     AvatarListPage,
     SlidingListPage,
     ThumbnailsPage,
-    ModalContentPage
+    ModalContentPage,
+    PopoverPage,
+    Popovers,
+    RangesPage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
@@ -53,7 +60,11 @@ import {ItemDetailPage} from "../pages/item-details/item-details";*/
     AvatarListPage,
     SlidingListPage,
     ThumbnailsPage,
-    ModalContentPage
+    ModalContentPage,
+    PopoverPage,
+    Popovers,
+    RangesPage,
+    SearchPage
   ],
   providers: [
     StatusBar,

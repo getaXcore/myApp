@@ -13,6 +13,9 @@ import {ListDividersPage} from "../pages/list-dividers/list-dividers";
 import {AvatarListPage} from "../pages/avatar-list/avatar-list";
 import {SlidingListPage} from "../pages/sliding-list/sliding-list";
 import {ThumbnailsPage} from "../pages/thumbnails/thumbnails";
+import {PopoverPage} from "../pages/popover/popover";
+import {RangesPage} from "../pages/ranges/ranges";
+import {SearchPage} from "../pages/search/search";
 
 @Component({
   templateUrl: 'app.html'
@@ -36,7 +39,10 @@ export class MyApp {
         {title:'List Dividers',component:ListDividersPage},
         {title:'Avatar List',component:AvatarListPage},
         {title:'Sliding List',component:SlidingListPage},
-        {title:'Thumbnail List',component:ThumbnailsPage}
+        {title:'Thumbnail List',component:ThumbnailsPage},
+        {title:'Popover',component:PopoverPage},
+        {title:'Ranges',component:RangesPage},
+        {title:'Search',component:SearchPage}
     ];
   }
 
